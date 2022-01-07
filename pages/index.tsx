@@ -20,10 +20,10 @@ export default function Home(){
                     Te doy la bienvenida a mi web, la mejor forma de mostrarte mis habilidades y contarte un poco sobre mi.
                 </p>
             </section>
-            <SiteSection link="/sobre-mi" icon={profile} text="Sobre mí" width="45" height="45" />
-            <SiteSection link="/tecnologias" icon={profile} text="Tecnologías" width="45" height="45" />
-            <SiteSection link="/proyectos" icon={profile} text="Proyectos" width="45" height="45" />
-            <SiteSection link="/public/images/css.png" tarjet="_blanck" icon={profile} text="CV" width="45" height="45" />
+            <SiteSection link="/sobre-mi" icon={profile} text="Sobre mí" width={45} height={45} />
+            <SiteSection link="/tecnologias" icon={profile} text="Tecnologías" width={45} height={45} />
+            <SiteSection link="/proyectos" icon={profile} text="Proyectos" width={45} height={45} />
+            <SiteSection link="/public/images/css.png" target="_blanck" icon={profile} text="CV" width={45} height={45} />
         </React.Fragment>
     )
 }
