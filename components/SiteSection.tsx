@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '@components/styles/site-section.module.scss'
+import styles from "@styles/site-section.module.scss" 
 
-export default function SiteSection(props){
+export default function SiteSection(props:any){
     const {link, icon, text, width, height} = props
     return(
         <section className={styles.item}>
