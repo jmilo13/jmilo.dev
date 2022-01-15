@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
-  &_sectionButtons{
+  gap: 2rem;
+  .description{
+    max-width: 18.75rem;
+    border-bottom: solid 2px $backgroundSections;
+  }
+  .sectionButtons{
     display: flex;
     flex-direction: column;
     width: fit-content;
