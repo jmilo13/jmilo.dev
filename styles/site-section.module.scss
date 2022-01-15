@@ -1,13 +1,12 @@
 .item{
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin: 1rem 0;
+    gap: 0.75rem;
     .triangle{
         width: 0;
         height: 0;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
-        border-top:30px $backgroundFound solid;
+        border-top:25px $letterLigth solid;
     }
 }

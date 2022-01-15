@@ -1,0 +1,13 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  &_sectionButtons{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 1.25rem;
+  }
+
+}

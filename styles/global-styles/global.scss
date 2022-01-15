@@ -3,13 +3,19 @@
 body{
   background-color: $backgroundFound;
   font-family: 'Roboto', sans-serif;
+  color: $letterLigth;
+  margin: 0;
+  box-sizing:border-box;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, a {
   font-family: 'Oswald', sans-serif;
-}
-
-a{
-  font-family: 'Oswald', sans-serif;
+  color: $letterDark;
   font-weight: bold;
+}
+h1{
+  font-size: 1.8rem;
+}
+h2{
+  font-size: 1.25rem;
 }
