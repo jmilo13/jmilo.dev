@@ -6,6 +6,9 @@
   .description{
     max-width: 18.75rem;
     border-bottom: solid 2px $backgroundSections;
+    p{
+      margin-top: 0;
+    }
   }
   .sectionButtons{
     display: flex;

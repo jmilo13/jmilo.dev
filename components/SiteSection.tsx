@@ -14,7 +14,7 @@ export default function SiteSection(data: Data){
     return(
         <section className={styles.item}>
             <div className={styles.triangle}></div>
-            <Button target={data.target} link={data.link} text={data.text} />
+            <Button target={data.target} link={data.link} text={data.text} solid={false}/>
         </section>
     )
 }
