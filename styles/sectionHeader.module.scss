@@ -1,0 +1,88 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.5rem 0 0;
+  .titleContainer{
+    background-color: $backgroundSections;
+    width: 80%;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    .title{
+      margin: 0;
+    }
+  }
+  .buttonMenu{
+    width: 37px;
+    height: 37px;
+    background: url('/icons/menu.png') center/cover no-repeat;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      background: url('/icons/menu-inverse.png') center/cover no-repeat;
+    }
+  }
+  .navbar{
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    padding: 1.5rem 0;
+    top: 0;
+    transition: all 0.3s;
+    z-index: 2;
+    &::before{
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $backgroundSecondaryTransparent;
+      backdrop-filter: blur(5px);
+      z-index: -1;
+    }
+    .titleContainerMenu{
+      @extend .titleContainer;
+      width: 96%;
+    }
+    .list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1.5rem;
+      .imageContainer{
+        background: $letterDark;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+      }
+      ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+          width: 12rem;
+          padding: 1rem;
+          border-bottom: solid 2px $backgroundSections;
+          text-align: center;
+          a{
+            display: block;
+            color: $letterLigth;
+            cursor: pointer;
+          } 
+        }
+      }
+      .social{
+        display: flex;
+        margin-top: 1.5rem;
+        gap: 1rem;
+      }
+    }
+  }
+  .hide{
+    @extend .navbar;
+    transform: translateX(-100%);
+  }
+}
