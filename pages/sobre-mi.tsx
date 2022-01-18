@@ -1,36 +1,11 @@
 import React from 'react'
-import SectionHeader from '@components/SectionHeader'
+import SectionTitle from '@components/SectionTitle'
 import styles from "@styles/about.module.scss" 
-
-const sections = [
-  {
-    text: 'Sobre mí',
-    url: '/sobre-mi',
-  },
-  {
-    text: 'Tecnologías',
-    url: '/tecnologias',
-  },
-  {
-    text: 'Proyectos',
-    url: '/proyectos',
-  },
-  {
-    text: 'CV',
-    url: '/documents/CV_Desarrollador_web.pdf',
-    openOther: true,
-  },
-  ]
 
 export default function About(){
   return(
     <>
-      <SectionHeader 
-        sections={sections} 
-        title='Sobre mí' 
-        social1={'https://www.linkedin.com/in/jmilo-dev/'}
-        social2={'https://github.com/jmilo13'}
-      />
+      <SectionTitle title='Sobre mí'/>
       <section className={styles.information}>
         <p>
           Soy colombiano viviendo hace unos años en la Ciudad Autónoma de Buenos Aires, Argentina. Soy psicólogo y el desarollo web es algo que recientemente empecé explorar y me ha encantado.
