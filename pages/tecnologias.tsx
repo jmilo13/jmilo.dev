@@ -1,24 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
+import {tecnologies} from '@utils/tecnologies'
 import SectionTitle from '@components/SectionTitle'
-
-const html = '/images/html5.png'
-const css = '/images/css.png'
-const javaScript = '/images/javascript-logo.png'
-const git = '/images/git.png'
-const sass = '/images/SASS.png'
+import styles from '@styles/tecnologies.module.scss'
 
 export default function Tecnologies(){
     return(
-        <React.Fragment>
-            <SectionTitle title='Tecnologías'/>
-            <section>
-              <Image src={html} alt="html" width="90" height="90"/>
-              <Image src={css} alt="css" width="90" height="90"/>
-              <Image src={javaScript} alt="javaScript" width="90" height="90"/>
-              <Image src={sass} alt="sass" width="90" height="90"/>
-              <Image src={git} alt="git" width="90" height="90"/>
+      <>
+        <SectionTitle title='Tecnologías'/>
+        <article className={styles.list}>
+          {tecnologies.map(tecnology => (
+            <section className={styles.card}>
+              <div className={styles.image}>
+                <Image src={tecnology.url} alt={tecnology.name} width="90" height="90"/>
+              </div>
+              <p className={styles.name}>{tecnology.name}</p>
             </section>
-        </React.Fragment>
+          ))}
+        </article>
+        
+      </>
     )
 }
