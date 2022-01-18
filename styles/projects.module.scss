@@ -1,0 +1,64 @@
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1.5rem 0;
+  .card{
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: solid 2px $backgroundSections;
+    a{
+      color: $letterLigth;
+    }
+  }
+  .containerRepo{
+    display: flex;
+    gap: 1rem;
+    span{
+      font-family: 'Oswald', sans-serif;
+      cursor: pointer;
+    }
+  }
+  .tooltip{
+    display: none;
+    align-items: center;
+    padding: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 50px;
+    left: 15px;
+    justify-content: center;
+    color: $letterLigth;
+    background-color: transparent;
+    animation: fadeIn 0.3s;
+  	opacity: 1;
+    &::before{
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $backgroundSecondaryTransparent;
+      backdrop-filter: blur(5px);
+    }
+    p{
+      z-index: 1;
+    }
+  }
+  .show{
+    display: flex;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+

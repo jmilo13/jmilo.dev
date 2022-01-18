@@ -33,11 +33,11 @@ export default function SectionHeader(data: Data){
           </div>
           <div className={styles.list}>
             <div className={styles.imageContainer} onClick={click}>
-              <Link href='/'><Image src={profile} width={80} height={80}/></Link>
+              <Link href='/'><img src={profile} width={80} height={80}/></Link>
             </div>
             <ul>
               {data.sections.map(section => 
-                <li onClick={click}>
+                <li key={section.text} onClick={click}>
                   {section.openOther ? <a href={section.url} target='_blank'>{section.text}</a> 
                   : <Link href={section.url}>{section.text}</Link>}
                 </li>)

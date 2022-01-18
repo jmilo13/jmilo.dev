@@ -6,7 +6,8 @@ body{
   color: $letterLigth;
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   *{
     box-sizing:border-box;
   }
