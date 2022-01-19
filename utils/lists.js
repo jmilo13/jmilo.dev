@@ -1,32 +1,94 @@
-export const tecnologies = [
+export const sections = [
+  {
+    text: 'Sobre mí',
+    url: '/sobre-mi',
+  },
+  {
+    text: 'Tecnologías',
+    url: '/tecnologias',
+  },
+  {
+    text: 'Proyectos',
+    url: '/proyectos',
+  },
+  {
+    text: 'CV',
+    url: '/documents/CV_Desarrollador_web.pdf',
+    openOther: true,
+  },
+  ]
+  
+  export const tecnologies = [
   {
     id:'t1',
-    url: '/images/html5.png', 
+    url: '/images/tecnologies/html5.png', 
     name: 'HTML',
     level: '',
   },
   {
     id:'t2',
-    url: '/images/css.png',
+    url: '/images/tecnologies/css.png',
     name: 'CSS',
     level: '',
   },
   {
     id:'t3',
-    url: '/images/javascript-logo.png',
+    url: '/images/tecnologies/javascript-logo.png',
     name: 'JavaScript',
     level: '',
   },
   {
     id:'t4',
-    url: '/images/git.png',
+    url: '/images/tecnologies/git.png',
     name: 'Git',
     level: '',
   },
   {
     id:'t5',
-    url: '/images/SASS.png',
+    url: '/images/tecnologies/SASS.png',
     name: 'Sass',
+    level: '',
+  },
+  {
+    id:'t6',
+    url: '/images/tecnologies/react.png',
+    name: 'React',
+    level: '',
+  },
+  {
+    id:'t7',
+    url: '/images/tecnologies/redux.png',
+    name: 'Redux',
+    level: '',
+  },
+  {
+    id:'t8',
+    url: '/images/tecnologies/nextjs.png',
+    name: 'NextJS',
+    level: '',
+  },
+  {
+    id:'t9',
+    url: '/images/tecnologies/appgyver.png',
+    name: 'AppGyver',
+    level: '',
+  },
+  {
+    id:'t10',
+    url: '/images/tecnologies/webpack.svg',
+    name: 'Webpack',
+    level: '',
+  },
+  {
+    id:'t11',
+    url: '/images/tecnologies/typescript.svg',
+    name: 'TypeScript',
+    level: '',
+  },
+  {
+    id:'t12',
+    url: '/images/tecnologies/firebase.png',
+    name: 'Firebase',
     level: '',
   },
 ]
@@ -37,15 +99,34 @@ export const projects = [
     title: 'Muro Cincelado',
     deployUrl: 'https://www.murocincelado.com/',
     repoUrl: 'https://github.com/jmilo13/muro-cincelado',
-    imageSrc: '/images/murocincelado.jpg',
-    aditionalData: '',
+    imageSrc: '/images/projects/murocincelado.jpg',
+    aditionalData: [
+      'Blog sobre sexualidad y promoción de servicios en psicología clinica',
+      'Tecnologias: React, Next, CSS-in-JS'  
+    ] 
   },
   {
     id:'p2',
     title: 'Alkemy',
     deployUrl: 'https://alkemy-challenge-oogcoin6m-jmilo13.vercel.app/',
     repoUrl: 'https://github.com/jmilo13/alkemyChallenge',
-    imageSrc: '/images/alkemy.jpg',
-    aditionalData: 'Email: challenge@alkemy.org Contraseña: react',
-  }
+    imageSrc: '/images/projects/alkemy.jpg',
+    aditionalData: [
+      'Web para consultar información de heroes y villanos, desde una API, para armar un equipo. Utiliza las siguientes credenciales:',
+      'Email: challenge@alkemy.org Contraseña: react',
+      'Tecnologías: React, Next, CSS-in-JS, API-REST'
+    ] 
+  },
+  {
+    id:'p3',
+    title: 'Alkemy',
+    deployUrl: 'https://alkemy-challenge-oogcoin6m-jmilo13.vercel.app/',
+    repoUrl: 'https://github.com/jmilo13/alkemyChallenge',
+    imageSrc: '/images/projects/alkemy.jpg',
+    aditionalData: [
+      'Web para consultar información de heroes y villanos, desde una API, para armar un equipo. Utiliza las siguientes credenciales:',
+      'Email: challenge@alkemy.org Contraseña: react',
+      'Tecnologías: React, Next, CSS-in-JS, API-REST'
+    ] 
+  },
 ]
