@@ -36,6 +36,7 @@ export default function Projects(){
                 <div id={`${project.id}`} className={styles.tooltip} style={{top: `${distance}px`}}>
                   <div className={styles.content}>
                     <button id='close' className={styles.close} onClick={changeVisibility}></button>
+                    <h1>{project.title}</h1>
                     {project.aditionalData.map(data => <p key={`data${project.aditionalData.indexOf(data)}`}>{data}</p>)}
                   </div>
                 </div>

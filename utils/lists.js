@@ -119,14 +119,46 @@ export const projects = [
   },
   {
     id:'p3',
-    title: 'Alkemy',
-    deployUrl: 'https://alkemy-challenge-oogcoin6m-jmilo13.vercel.app/',
-    repoUrl: 'https://github.com/jmilo13/alkemyChallenge',
-    imageSrc: '/images/projects/alkemy.jpg',
+    title: 'Product Card - Web Component',
+    deployUrl: 'https://jmilo13.github.io/product-card/',
+    repoUrl: 'https://github.com/jmilo13/product-card',
+    imageSrc: '/images/projects/webcomponent.jpg',
     aditionalData: [
-      'Web para consultar información de heroes y villanos, desde una API, para armar un equipo. Utiliza las siguientes credenciales:',
-      'Email: challenge@alkemy.org Contraseña: react',
-      'Tecnologías: React, Next, CSS-in-JS, API-REST'
+      'Implementación de webcomponent personalizable para productos de venta. Diseño repsonsive, mobile first.',
+      'Tecnologías: HTML, CSS, JavaScript, Webcomponents'
+    ] 
+  },
+  {
+    id:'p4',
+    title: 'BatataBit',
+    deployUrl: 'https://github.com/jmilo13/batatabit',
+    repoUrl: 'https://jmilo13.github.io/batatabit/',
+    imageSrc: '/images/projects/batatabit.jpg',
+    aditionalData: [
+      'Proyecto de maquetación a partir de una propuesta gráfica en Figma.',
+      'Tecnologías: HTML, CSS, JavaScript'
+    ] 
+  },
+  {
+    id:'p5',
+    title: 'Wikipedia Clone',
+    deployUrl: 'https://jmilo13.github.io/wikipediaClone/',
+    repoUrl: 'https://github.com/jmilo13/wikipediaClone',
+    imageSrc: '/images/projects/wikipedia.jpg',
+    aditionalData: [
+      'Clon de la pagina de inicio de wikipedia, con su respectivo diseño responsive mobile-first.',
+      'Tecnologías: HTML, CSS'
+    ] 
+  },
+  {
+    id:'p6',
+    title: 'Google Clone',
+    deployUrl: 'https://jmilo13.github.io/googleClone/',
+    repoUrl: 'https://github.com/jmilo13/googleClone',
+    imageSrc: '/images/projects/google.jpg',
+    aditionalData: [
+      'Clon de la pagina de inicio del buscador Google. Diseño responsive mobile-first',
+      'Tecnologías: HTML, CSS'
     ] 
   },
 ]
