@@ -67,6 +67,9 @@
           border-bottom: solid 2px $backgroundSections;
           text-align: center;
           a{
+            font-family: 'Oswald', sans-serif;
+            color: $letterDark;
+            font-weight: bold;
             display: block;
             color: $letterLigth;
             cursor: pointer;

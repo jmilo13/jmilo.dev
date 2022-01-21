@@ -11,10 +11,12 @@
     height: 6rem;
   }
   a{
+    font-family: 'Oswald', sans-serif;
+    color: $letterDark;
+    font-weight: bold;
     width: 100%;
     font-size: 1.2rem;
     color: $letterDark;
-    text-decoration: none;
     text-align: center;
     z-index: 2;
   }

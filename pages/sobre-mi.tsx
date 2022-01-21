@@ -8,14 +8,15 @@ export default function About(){
       <SectionTitle title='Sobre mí'/>
       <section className={styles.information}>
         <p>
-          Soy colombiano viviendo hace unos años en la Ciudad Autónoma de Buenos Aires, Argentina. Soy psicólogo y el desarollo web es algo que recientemente empecé explorar y me ha encantado.
+          Me llamo Camilo Gonzalez, tengo 28 años, soy colombiano y actualmente vivo en la Ciudad Autónoma de Buenos Aires, Argentina, desde hace algunos años. Me gusta explorar nuevos horizontes y por ello empecé a estudiar programación. Además de desarrollador web soy psicólogo y a veces escribo, puedes leerme en <a href='https://www.murocincelado.com/' target='_blank'>Muro Cincelado</a>.
         </p>
         <p>
-          El último año fue de cambios globales y mi vida no fue la exepción. Decidí abrir mi página web, para explorar diferentes cosas: escribir, hacer consulta clínica y sin darme cuenta despertó una nueva pasión.
+          La mejor forma de saber lo que puedo hacer es ver mis <a href='/proyectos' target='_blank'>proyectos</a>, este sitio por ejemplo esta construido con tecnologías como Raect, NextJs y TypeScript. Puedes ver el codigo <a href='https://github.com/jmilo13/jmilo.dev'>aquí</a>. 
         </p>
         <p>
-          Puedes visitarla, en principio la hice con wordpres a punta de tutoriales, hoy la relance construida con React y Next.
+          Si te gusta lo que hago y quieres contratarme puedes escribirme a través de mis redes sociales como <a href='https://www.linkedin.com/in/jmilo-dev/' target='_blank'>LinkedIn</a> o a mi correo electrónico <a href="mailto:jmilo.dev@gmail.com">jmilo.dev@gmail.com</a>. Si te gusta  mi trabajo tambien me puedes invitar un cafecito 😉
         </p>
+        <a href='https://cafecito.app/jmilo-dev' rel='noopener' target='_blank'><img srcSet='https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_5.png' alt='Invitame un café en cafecito.app' /></a>
       </section>
     </>
   )

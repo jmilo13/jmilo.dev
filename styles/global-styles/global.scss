@@ -10,13 +10,32 @@ body{
   width: 100vw;
   min-height: 100vh;
   height: 100%;
+  position: relative;
+  &::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
   *{
     box-sizing:border-box;
   }
-  background: url('/images/forest-vertical.jpg') center/cover no-repeat;
+  background-color: $backgroundFound;
+  background: url($backgroundImage) center/cover no-repeat;
+}
+a{
+  text-decoration: none;
+  color: $button;
+  &:hover{
+    color: $backgroundSections;
+  }
 }
 
-h1, h2, h3, h4, a {
+h1, h2, h3, h4{
   font-family: 'Oswald', sans-serif;
   color: $letterDark;
   font-weight: bold;
