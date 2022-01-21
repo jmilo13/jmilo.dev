@@ -7,9 +7,16 @@
   padding: 1.5rem 0;
   max-width: 44rem;
   margin: auto;
+  .imageLink img{
+    transition: all 0.3s;
+    &:hover{
+      transform: scale(1.06);
+    }
+  }
   .card{
     padding-bottom: 5px;
     border-bottom: solid 2px $backgroundSections;
+    width: fit-content;
     a{
       color: $letterLigth;
     }

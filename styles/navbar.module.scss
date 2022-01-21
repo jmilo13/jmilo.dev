@@ -24,6 +24,7 @@
     top: 0;
     transition: all 0.3s;
     z-index: 2;
+    max-width: 24rem;
     &::before{
       position: absolute;
       content: "";

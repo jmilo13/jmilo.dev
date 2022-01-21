@@ -5,18 +5,28 @@ import SiteSection from '@components/SiteSection'
 import styles from '@styles/home.module.scss'
 
 const welcome = '/images/welcome.png'
+const github = '/icons/github.png'
+const linkedin = '/icons/linkedin.png'
 
 export default function Home(){
     return(
         <article className={styles.home}>
-            <HeroHome 
-                src={welcome} 
-                text='Saludo' 
-                width={142} 
-                height={142} 
-                title='Camilo Gonzalez'
-                subtitle='Frontend Developer'
-            />
+            <div className={styles.hero}>
+                <HeroHome 
+                    src1={linkedin} 
+                    src2={github}
+                    social1={'https://www.linkedin.com/in/jmilo-dev/'}
+                    social2={'https://github.com/jmilo13'}
+                    text='Saludo' 
+                    width={30} 
+                    height={30} 
+                    title='Camilo Gonzalez'
+                    subtitle='Frontend Developer'
+                />
+            </div>
+            <div className={styles.image}>
+                <Image src={welcome} layout='fill' />   
+            </div>
             <section className={styles.description}>
                 <p>
                     ¡Hola! 

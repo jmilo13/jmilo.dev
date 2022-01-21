@@ -131,8 +131,8 @@ export const projects = [
   {
     id:'p4',
     title: 'BatataBit',
-    deployUrl: 'https://github.com/jmilo13/batatabit',
-    repoUrl: 'https://jmilo13.github.io/batatabit/',
+    deployUrl: 'https://jmilo13.github.io/batatabit/',
+    repoUrl: 'https://github.com/jmilo13/batatabit',
     imageSrc: '/images/projects/batatabit.jpg',
     aditionalData: [
       'Proyecto de maquetación a partir de una propuesta gráfica en Figma.',

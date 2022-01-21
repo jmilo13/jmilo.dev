@@ -23,10 +23,10 @@ export default function Projects(){
             
           return (
           <section key={project.id} className={styles.card}>
-            <div className={styles.containerImage}>
-            </div>
+            {/* <div className={styles.containerImage}>
+            </div> */}
             <a className={styles.imageLink} href={project.deployUrl} target='_blank'>
-              <img src={project.imageSrc} alt={project.title} width="320" height="220"/>
+              <img src={project.imageSrc} alt={project.title} width="340" height="230"/>
             </a>
             <div className={styles.containerRepo}>
               <div></div> 
