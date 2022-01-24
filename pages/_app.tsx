@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import Navbar from '@components/Navbar'
+import Footer from '@components/Footer'
 import '@styles/global-styles/global.scss'
 import { sections } from '@utils/lists'
 
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         social2={'https://github.com/jmilo13'}
       />
       <Component {...pageProps} />
+      <Footer/>
     </>
   )
 }
