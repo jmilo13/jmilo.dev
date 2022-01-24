@@ -9,10 +9,10 @@ export default function Tecnologies(){
     return(
       <>
       <Head>
-          <title>Tecnologías</title>
+          <title>Portafolio - Tecnologías</title>
           <meta name='description' content='Stack tecnológico actual, usado en los diferentes proyectos implementados'/> 
 
-          <meta property="og:title" content="Tecnologías" key="ogtitle"/>
+          <meta property="og:title" content="Portafolio - Tecnologías" key="ogtitle"/>
           <meta property="og:site_name" content='Portafolio' key="ogsitename" />
           <meta property="og:type" content="article" key="ogtype"/>
           <meta property="og:url" content="/tecnologias" key="ogurl"/>

@@ -13,10 +13,10 @@ export default function Home(){
     return(
         <>
         <Head>
-            <title>Portafolio</title>
+            <title>Portafolio - Inicio</title>
             <meta name='description' content='Portafolio de Camilo Gonzalez como frontend developer. Incluye información, tecnologías, proyectos y un CV descargable.'/> 
             
-            <meta property="og:title" content="Inicio" key="ogtitle"/>
+            <meta property="og:title" content="Portafolio - Inicio" key="ogtitle"/>
             <meta property="og:site_name" content='Portafolio' key="ogsitename" />
             <meta property="og:type" content="homepage" key="ogtype"/>
             <meta property="og:url" content="/" key="ogurl"/>

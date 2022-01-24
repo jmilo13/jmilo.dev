@@ -10,10 +10,10 @@ export default function Projects(){
     return(
       <>
         <Head>
-            <title>Proyectos</title>
+            <title>Portafolio - Proyectos</title>
             <meta name='description' content='Conjunto de proyectos realizados con diferentes tecnologias. Incluye deploy y repositorio en GitHub de cada uno'/> 
 
-            <meta property="og:title" content="Proyectos" key="ogtitle"/>
+            <meta property="og:title" content="Portafolio - Proyectos" key="ogtitle"/>
             <meta property="og:site_name" content='Portafolio' key="ogsitename" />
             <meta property="og:type" content="article" key="ogtype"/>
             <meta property="og:url" content="/proyectos" key="ogurl"/>
