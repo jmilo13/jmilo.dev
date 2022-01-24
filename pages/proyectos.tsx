@@ -13,7 +13,6 @@ export default function Projects(){
             <title>Proyectos</title>
             <meta name='description' content='Conjunto de proyectos realizados con diferentes tecnologias. Incluye deploy y repositorio en GitHub de cada uno'/> 
 
-            <meta property="og:image" content='/images/profile.png' key='ogimage'/>
             <meta property="og:title" content="Proyectos" key="ogtitle"/>
             <meta property="og:site_name" content='Portafolio' key="ogsitename" />
             <meta property="og:type" content="article" key="ogtype"/>

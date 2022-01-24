@@ -12,7 +12,6 @@ export default function Tecnologies(){
           <title>Tecnologías</title>
           <meta name='description' content='Stack tecnológico actual, usado en los diferentes proyectos implementados'/> 
 
-          <meta property="og:image" content='/images/profile.png' key='ogimage'/>
           <meta property="og:title" content="Tecnologías" key="ogtitle"/>
           <meta property="og:site_name" content='Portafolio' key="ogsitename" />
           <meta property="og:type" content="article" key="ogtype"/>
