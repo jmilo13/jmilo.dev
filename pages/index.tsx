@@ -15,7 +15,8 @@ export default function Home(){
         <Head>
             <title>Portafolio</title>
             <meta name='description' content='Portafolio de Camilo Gonzalez como frontend developer. Incluye información, tecnologías, proyectos y un CV descargable.'/> 
-
+            
+            <meta property="og:image" content='/images/profile.png' key='ogimage'/>
             <meta property="og:title" content="Inicio" key="ogtitle"/>
             <meta property="og:site_name" content='Portafolio' key="ogsitename" />
             <meta property="og:type" content="homepage" key="ogtype"/>

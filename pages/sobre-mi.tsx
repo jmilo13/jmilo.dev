@@ -10,6 +10,7 @@ export default function About(){
         <title>Sobre mí</title>
         <meta name='description' content='Información sobre Camilo Gonzalez como frontend depeloper y algunos aspectos personales'/> 
 
+        <meta property="og:image" content='/images/profile.png' key='ogimage'/>
         <meta property="og:title" content="Sobre mí" key="ogtitle"/>
         <meta property="og:site_name" content='Portafolio' key="ogsitename" />
         <meta property="og:type" content="about" key="ogtype"/>
