@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
 import HeroHome from '@components/HeroHome'
 import SiteSection from '@components/SiteSection' 
 import styles from '@styles/home.module.scss'
@@ -10,6 +11,17 @@ const linkedin = '/icons/linkedin.png'
 
 export default function Home(){
     return(
+        <>
+        <Head>
+            <title>Portafolio</title>
+            <meta name='description' content='Portafolio de Camilo Gonzalez como frontend developer. Incluye información, tecnologías, proyectos y un CV descargable.'/> 
+
+            <meta property="og:title" content="Inicio" key="ogtitle"/>
+            <meta property="og:site_name" content='Portafolio' key="ogsitename" />
+            <meta property="og:type" content="homepage" key="ogtype"/>
+            <meta property="og:url" content="/" key="ogurl"/>
+            <meta property="og:description" content='Portafolio de Camilo Gonzalez como frontend developer. Incluye información, tecnologías, proyectos y un CV descargable.' key="ogdescription"/>
+        </Head>
         <article className={styles.home}>
             <div className={styles.hero}>
                 <HeroHome 
@@ -40,5 +52,6 @@ export default function Home(){
                 <SiteSection link="/documents/CV_Desarrollador_web.pdf" target="_blanck" text="CV"/>
             </section>
         </article>
+        </>
     )
 }

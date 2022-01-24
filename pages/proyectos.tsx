@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Head from 'next/head'
 import SectionTitle from '@components/SectionTitle'
 import { projects } from '@utils/lists'
 import styles from '@styles/projects.module.scss'
@@ -8,6 +9,16 @@ export default function Projects(){
   const[distance, setDistance] = useState(0)
     return(
       <>
+        <Head>
+            <title>Proyectos</title>
+            <meta name='description' content='Conjunto de proyectos realizados con diferentes tecnologias. Incluye deploy y repositorio en GitHub de cada uno'/> 
+
+            <meta property="og:title" content="Proyectos" key="ogtitle"/>
+            <meta property="og:site_name" content='Portafolio' key="ogsitename" />
+            <meta property="og:type" content="article" key="ogtype"/>
+            <meta property="og:url" content="/proyectos" key="ogurl"/>
+            <meta property="og:description" content='Conjunto de proyectos realizados con diferentes tecnologias. Incluye deploy y repositorio en GitHub' key="ogdescription"/>
+        </Head>
         <SectionTitle title='Proyectos'/>
         <article className={styles.list}>
           {projects.map(project => {
@@ -23,8 +34,6 @@ export default function Projects(){
             
           return (
           <section key={project.id} className={styles.card}>
-            {/* <div className={styles.containerImage}>
-            </div> */}
             <a className={styles.imageLink} href={project.deployUrl} target='_blank'>
               <img src={project.imageSrc} alt={project.title} width="340" height="230"/>
             </a>

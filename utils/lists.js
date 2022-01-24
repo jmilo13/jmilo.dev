@@ -69,7 +69,7 @@ export const sections = [
   },
   {
     id:'t9',
-    url: '/images/tecnologies/appgyver.png',
+    url: '/images/tecnologies/appgyver-logo.png',
     name: 'AppGyver',
     level: '',
   },
