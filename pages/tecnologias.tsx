@@ -10,13 +10,13 @@ export default function Tecnologies(){
       <>
       <Head>
           <title>Tecnologías</title>
-          <meta name='description' content='Stack tecnológico actual, usado en los difernetes proyectos implementados'/> 
+          <meta name='description' content='Stack tecnológico actual, usado en los diferentes proyectos implementados'/> 
 
           <meta property="og:title" content="Tecnologías" key="ogtitle"/>
           <meta property="og:site_name" content='Portafolio' key="ogsitename" />
           <meta property="og:type" content="article" key="ogtype"/>
           <meta property="og:url" content="/tecnologias" key="ogurl"/>
-          <meta property="og:description" content='Stack tecnológico actual, usado en los difernetes proyectos implementados' key="ogdescription"/>
+          <meta property="og:description" content='Stack tecnológico actual, usado en los diferentes proyectos implementados' key="ogdescription"/>
         </Head>
         <SectionTitle title='Tecnologías'/>
         <article className={styles.list}>

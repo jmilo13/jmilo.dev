@@ -17,7 +17,7 @@ export default function Projects(){
             <meta property="og:site_name" content='Portafolio' key="ogsitename" />
             <meta property="og:type" content="article" key="ogtype"/>
             <meta property="og:url" content="/proyectos" key="ogurl"/>
-            <meta property="og:description" content='Conjunto de proyectos realizados con diferentes tecnologias. Incluye deploy y repositorio en GitHub' key="ogdescription"/>
+            <meta property="og:description" content='Conjunto de proyectos realizados con diferentes tecnologias. Incluye deploy y repositorio en GitHub de cada uno' key="ogdescription"/>
         </Head>
         <SectionTitle title='Proyectos'/>
         <article className={styles.list}>
