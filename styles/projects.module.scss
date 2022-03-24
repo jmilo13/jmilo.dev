@@ -1,87 +1,184 @@
-.list{
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-  padding: 1.5rem 0;
-  max-width: 44rem;
-  margin: auto;
-  .imageLink img{
-    transition: all 0.3s;
-    &:hover{
-      transform: scale(1.06);
-    }
-  }
-  .card{
-    padding-bottom: 5px;
-    border-bottom: solid 2px $backgroundSections;
-    width: fit-content;
-    a{
-      color: $letterLigth;
-    }
-  }
-  .containerRepo{
-    display: flex;
-    gap: 1rem;
-    span{
-      font-family: 'Oswald', sans-serif;
-      cursor: pointer;
-    }
-  }
-  .tooltip{
-    display: none;
-    max-height: 400px;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    bottom: 50px;
-    left: 15px;
-    justify-content: center;
-    color: $letterLigth;
-    background-color: transparent;
-    animation: fadeIn 0.3s;
-  	opacity: 1;
-    &::before{
-      position: absolute;
-      content: "";
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: $backgroundSecondaryTransparent;
-      backdrop-filter: blur(5px);
-    }
-    .content{
-      z-index: 1;
-      .close{
-        width: 1.3rem;
-        height: 1.3rem;
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-        background: url('/icons/close.png') center/cover no-repeat;
-        border: none;
-      }
-      p{
-        font-weight: bold;
-      }
-    }
-  }
-  .show{
-    display: flex;
-  }
-}
+.container {
+    overflow-y: scroll;
 
-@keyframes fadeIn {
-  from {
-  	opacity: 0;
-  }
-  to {
- 	opacity: 1;
-  }
-}
+    max-height: calc(100vh - 157px);
+    .list {
+        position: relative;
 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        max-width: 44rem;
+        margin: auto;
+        padding: 1.5rem 0;
+
+        gap: 1.5rem;
+        .imageLink img {
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.06);
+            }
+        }
+        .project {
+            width: fit-content;
+            padding-bottom: 5px;
+
+            border-bottom: solid 2px $backgroundSections;
+            a {
+                transition: color 0.3s;
+
+                color: $letterLigth;
+                &:hover {
+                    color: $backgroundSections;
+                }
+            }
+            .box {
+                position: relative;
+
+                width: 340px;
+                height: 230px;
+
+                perspective: 1000px;
+            }
+
+            .box:hover .card,
+            .front.back {
+                transform: rotateY(180deg);
+            }
+
+            .card {
+                transition: all 0.5s linear;
+
+                transform-style: preserve-3d;
+            }
+
+            .front {
+                position: absolute;
+
+                height: 230px;
+
+                backface-visibility: hidden;
+            }
+
+
+            .back {
+                min-width: 340px;
+                min-height: 230px;
+
+                background: $backgroundFound;
+            }
+
+            .information {
+                padding: 18px;
+
+                color: $letterLigth;
+                h1 {
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+
+                    margin: 0;
+
+                    color: $letterLigth;
+                }
+                p {
+                    font-size: 0.8rem;
+                }
+                .close {
+                    position: absolute;
+                    top: 1.5rem;
+                    right: 1.5rem;
+
+                    width: 1.3rem;
+                    height: 1.3rem;
+
+                    border: none;
+                    background: url('/icons/close.png') center/cover no-repeat;
+                    @media(min-width: 750px) {
+                        display: none;
+                    }
+                }
+            }
+            .rotate:hover .card {
+                transform: none;
+            }
+        }
+        .containerRepo {
+            display: flex;
+            justify-content: space-around;
+
+            padding-top: 0.5rem;
+
+            gap: 1rem;
+
+            span {
+                font-family: 'Oswald', sans-serif;
+
+                cursor: pointer;
+            }
+        }
+        .tooltip {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            bottom: 50px;
+            left: 15px;
+
+            display: none;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            max-height: 400px;
+            padding: 2rem;
+
+            animation: fadeIn 0.3s;
+
+            opacity: 1;
+            color: $letterLigth;
+            background-color: transparent;
+            &::before {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                content: '';
+
+                background-color: $backgroundSecondaryTransparent;
+
+                backdrop-filter: blur(5px);
+            }
+            .content {
+                z-index: 1;
+                .close {
+                    position: absolute;
+                    top: 1.5rem;
+                    right: 1.5rem;
+
+                    width: 1.3rem;
+                    height: 1.3rem;
+
+                    border: none;
+                    background: url('/icons/close.png') center/cover no-repeat;
+                }
+                p {
+                    font-weight: bold;
+                }
+            }
+        }
+        .show {
+            display: flex;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
