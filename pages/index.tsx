@@ -49,7 +49,7 @@ export default function Home(){
                 <SiteSection link="/sobre-mi" text="Sobre mí"/>
                 <SiteSection link="/tecnologias" text="Tecnologías"/>
                 <SiteSection link="/proyectos" text="Proyectos"/>
-                <SiteSection link="/documents/CV_Desarrollador_web.pdf" target="_blanck" text="CV"/>
+                <SiteSection link="/documents/CV_Desarrollador_Frontend.pdf" target="_blanck" text="CV"/>
             </section>
         </article>
         </>
