@@ -97,7 +97,7 @@ export const projects = [
   {
     id:'p1',
     title: 'Muro Cincelado',
-    deployUrl: 'https://www.murocincelado.com/',
+    deployUrl: 'https://muro-cincelado.vercel.app/',
     repoUrl: 'https://github.com/jmilo13/muro-cincelado',
     imageSrc: '/images/projects/murocincelado.jpg',
     aditionalData: [
