@@ -101,8 +101,8 @@ export const projects = [
     repoUrl: 'https://github.com/jmilo13/muro-cincelado',
     imageSrc: '/images/projects/murocincelado.jpg',
     aditionalData: [
-      'Blog sobre sexualidad y promoción de servicios en psicología clinica',
-      'Tecnologias: React, Next, CSS-in-JS'  
+      'Blog sobre sexualidad y promoción de servicios en psicología clinica. Utiliza Notion como CMS para las entradas de blog.',
+      'Tecnologias: React, Next, CSS-in-JS, Notion'  
     ] 
   },
   {
