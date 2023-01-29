@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media #{$media-desktop} {
+    float: left;
+  }
   .buttonMenu{
     position: absolute;
     top: 2.2rem;
@@ -15,6 +18,9 @@
     &:hover {
       background: url('/icons/menu-inverse.png') center/cover no-repeat;
     }
+    @media #{$media-desktop} {
+      display: none;
+    }
   }
   .navbar{
     position: absolute;
@@ -25,6 +31,11 @@
     transition: all 0.3s;
     z-index: 2;
     max-width: 24rem;
+    @media #{$media-desktop} {
+      position: relative;
+      width: 100%;
+      min-width: 250px;
+    }
     &::before{
       position: absolute;
       content: "";
@@ -52,7 +63,8 @@
       .imageContainer{
         background: $letterDark;
         border-radius: 50%;
-        padding: 5px;
+        overflow: hidden;
+        height: 100px;
         cursor: pointer;
       }
       ul{
@@ -90,6 +102,12 @@
   .hide{
     @extend .navbar;
     transform: translateX(-100%);
+    @media #{$media-desktop} {
+      transform: none;
+      position: relative;
+      width: 100%;
+      min-width: 250px;
+    }
   }
 }
 .none{

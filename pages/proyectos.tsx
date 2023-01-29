@@ -48,12 +48,16 @@ export default function Projects(){
                     }}>
                         <h1>{project.title}</h1>
                         {project.aditionalData.map(data => <p key={`data${project.aditionalData.indexOf(data)}`}>{data}</p>)}
+                        {project.references?.map(reference => <p key={`data${project.references.indexOf(reference)}`}>{reference.texto}<a href={reference.url} target="_blank">{reference.textoUrl}</a></p>)}
                     </div>
                   </div>    
                 </div>
               </div>
               <div className={styles.containerRepo}>
-                <a href={project.repoUrl} target='_blank'>Ver repositorio</a>
+                {project.repoUrl !== ""
+                  ? <a href={project.repoUrl} target='_blank'>Ver repositorio</a>
+                  : <p>Sin acceso a repositorio</p> 
+                }
                 <a href={project.deployUrl} target='_blank'>Visitar sitio</a>
               </div>
             </section>

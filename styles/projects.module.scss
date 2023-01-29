@@ -1,7 +1,7 @@
 .container {
     overflow-y: scroll;
-
-    max-height: calc(100vh - 157px);
+    max-height: calc(100vh - 110px);
+    
     .list {
         position: relative;
 
@@ -106,6 +106,7 @@
         .containerRepo {
             display: flex;
             justify-content: space-around;
+            align-items: center;
 
             padding-top: 0.5rem;
 
@@ -115,6 +116,9 @@
                 font-family: 'Oswald', sans-serif;
 
                 cursor: pointer;
+            }
+            p {
+                margin: 0;
             }
         }
         .tooltip {

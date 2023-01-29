@@ -4,6 +4,10 @@ export const sections = [
     url: '/sobre-mi',
   },
   {
+    text: 'Crea tu web',
+    url: '/crea-tu-web',
+  },
+  {
     text: 'Tecnologías',
     url: '/tecnologias',
   },
@@ -94,6 +98,23 @@ export const sections = [
 ]
 
 export const projects = [
+  {
+    id:'p0',
+    title: 'Arqplanbim',
+    deployUrl: 'https://muro-cincelado.vercel.app/',
+    repoUrl: "",
+    imageSrc: '/images/projects/arqplanbim.jpeg',
+    aditionalData: [
+      'Sitio web informativo de arquitectura multilenguaje (espanol, ingles y alemán). No se permite el acceso al repositorio por petición del cliente',
+      'Tecnologias: React, NextJs, CSS-in-JS, i18n'  
+    ],
+    references: [{
+      texto: "Diseño: ",
+      textoUrl: "Cristian Rendon",
+      url: "https://www.linkedin.com/in/cristianrendon/"
+      }
+    ]
+  },
   {
     id:'p1',
     title: 'Muro Cincelado',

@@ -11,9 +11,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         sections={sections}
         social1={'https://www.linkedin.com/in/jmilo-dev/'}
         social2={'https://github.com/jmilo13'}
+        social3={'https://wa.me/message/V7KKKDIRGD62K1'}
       />
       <Component {...pageProps} />
-      <Footer/>
     </>
   )
 }

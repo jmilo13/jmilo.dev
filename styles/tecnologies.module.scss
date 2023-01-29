@@ -5,7 +5,9 @@
   padding: 1.5rem;
   justify-items: center;
   max-width: 53rem;
+  max-height: calc(100vh - 110px);
   margin: auto;
+  overflow-y: scroll;
   .card{
     display: flex;
     justify-content: center;

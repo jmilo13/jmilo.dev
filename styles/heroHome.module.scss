@@ -1,14 +1,13 @@
 .hero{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
-  position: relative;
+  width: 90%;
+  margin-left: auto;
+  background-color: $backgroundSections;
   .header{
-    width: 90%;
-    padding: 1rem 1.5rem;
+    min-width: 212px;
+    padding: 10px;
     align-self: flex-end;
-    background-color: $backgroundSections;
     *{
       margin: 0;
     }
@@ -16,8 +15,6 @@
   .social{
     display: flex;
     gap: 1rem;
-    position: absolute;
-    right: 0;
     height: 100%;
     align-items: center;
     padding: 5px;

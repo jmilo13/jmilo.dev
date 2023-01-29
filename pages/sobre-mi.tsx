@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import SectionTitle from '@components/SectionTitle'
 import styles from "@styles/about.module.scss" 
+import Link from 'next/dist/client/link'
 
 export default function About(){
   return(
@@ -19,15 +20,17 @@ export default function About(){
       <SectionTitle title='Sobre mí'/>
       <section className={styles.information}>
         <p>
-          Me llamo Camilo Gonzalez, tengo 28 años, soy colombiano y actualmente vivo en la Ciudad Autónoma de Buenos Aires, Argentina, desde hace algunos años. Me gusta explorar nuevos horizontes y por ello empecé a estudiar programación. Además de desarrollador web soy psicólogo y a veces escribo, puedes leerme en <a href='https://www.murocincelado.com/' target='_blank'>Muro Cincelado</a>.
+          Me llamo Camilo Gonzalez, soy colombiano y desde hace algunos años vivo en la Ciudad Autónoma de Buenos Aires, Argentina. Me gradue de psicología en 2016. Motivado por la pandemia en 2020, quise explorar otros horizontes, lo que me llevó a estudiar programación. 
         </p>
         <p>
-          La mejor forma de saber lo que puedo hacer es ver mis <a href='/proyectos' target='_blank'>proyectos</a>, este sitio por ejemplo esta construido con tecnologías como Raect, NextJs, TypeScript y Sass. Puedes ver el codigo <a href='https://github.com/jmilo13/jmilo.dev'>aquí</a>. 
+          Uno de mis primeros proyectos web fue <a href='https://murocincelado.vercel.app/' target='_blank'>Muro Cincelado</a> un blog personal en el que también promocionaba mis servicios como psicologo. Inicialmente hecho en wordpress lo rediseñe en react y recientemente implemente Notion como CMS para las entradas de blog.
         </p>
         <p>
-          Si te gusta lo que hago y quieres contratarme puedes escribirme a través de mis redes sociales como <a href='https://www.linkedin.com/in/jmilo-dev/' target='_blank'>LinkedIn</a> o a mi correo electrónico <a href="mailto:jmilo.dev@gmail.com">jmilo.dev@gmail.com</a>. Si te gusta  mi trabajo tambien me puedes invitar un cafecito 😉
+          Si te interesa ver más de mi trabajo puedes revisar mis <a href='/proyectos' target='_blank'>proyectos</a>. Este sitio, por ejemplo, esta construido con tecnologías como Raect, NextJs, TypeScript y Sass. Puedes ver el codigo <a href='https://github.com/jmilo13/jmilo.dev'>aquí</a>. 
         </p>
-        <a href='https://cafecito.app/jmilo-dev' rel='noopener' target='_blank'><img srcSet='https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_5.png' alt='Invitame un café en cafecito.app' /></a>
+        <p>
+          Si te gusta lo que hago y quieres crear tu propio sitio web, puedes revisar en <a href='/crea-tu-web' target='_blank'>crea tu web</a> para obtener más información y contactarme a través de <a href='https://www.linkedin.com/in/jmilo-dev/' target='_blank'>LinkedIn</a>, <a href="mailto:jmilo.dev@gmail.com">mail</a> o <a href='https://wa.me/message/V7KKKDIRGD62K1' target='_blank'>Whatsapp</a>
+        </p>
       </section>
     </>
   )

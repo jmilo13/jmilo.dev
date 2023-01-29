@@ -1,0 +1,22 @@
+.create{
+  padding: 1rem;
+  border-bottom: solid 2px $backgroundSections;
+  max-width: 44rem;
+  max-height: calc(100vh - 110px);
+  overflow-y: scroll;
+  @media #{$media-tablet} {
+    margin: 1.5rem auto;
+  }
+  .containerCards {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    overflow-x: scroll;
+    @media #{$media-tablet} {
+      flex-wrap: wrap;;
+    }
+  }
+  strong {
+    text-decoration: underline;
+  }
+}

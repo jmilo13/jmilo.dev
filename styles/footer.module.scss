@@ -4,4 +4,8 @@
     width: fit-content;
     margin: auto;
   }
+  @media #{$media-desktop} {
+    float: left;
+  }
+  
 }

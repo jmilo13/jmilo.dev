@@ -8,6 +8,7 @@ interface Data{
   sections: Sections[]
   social1: string
   social2: string
+  social3: string
 }
 interface Sections{
   text: string
@@ -15,9 +16,10 @@ interface Sections{
   openOther?: boolean
 }
 
-const profile = '/images/profile.png'
+const profile = '/images/profile.jpeg'
 const github = '/icons/github.png'
 const linkedin = '/icons/linkedin.png'
+const whatsapp = '/icons/whatsapp.png'
 
 export default function SectionHeader(data: Data){
   const [hide, setHide] = useState(true)
@@ -33,7 +35,7 @@ export default function SectionHeader(data: Data){
           </div>
           <div className={styles.list}>
             <div className={styles.imageContainer} onClick={click}>
-              <Link href='/'><img src={profile} width={80} height={80}/></Link>
+              <Link href='/'><img src={profile} width={100} height={100}/></Link>
             </div>
             <ul>
               {data.sections.map(section => 
@@ -46,6 +48,7 @@ export default function SectionHeader(data: Data){
             <div className={styles.social}>
               <a onClick={click} href={data.social1} target='_blank'><Image src={linkedin} width={45} height={45}/></a>
               <a onClick={click} href={data.social2} target='_blank'><Image src={github} width={45} height={45}/></a>
+              <a onClick={click} href={data.social3} target='_blank'><Image src={whatsapp} width={45} height={45}/></a>
             </div>
           </div>
         </nav>

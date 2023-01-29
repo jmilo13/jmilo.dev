@@ -1,8 +1,9 @@
 .information{
-  margin: 1.5rem;
-  padding: 1rem 0;
+  padding: 1rem;
   border-bottom: solid 2px $backgroundSections;
   max-width: 44rem;
+  max-height: calc(100vh - 110px);
+  overflow-y: scroll;
   @media #{$media-tablet} {
     margin: 1.5rem auto;
   }

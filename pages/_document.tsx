@@ -10,8 +10,8 @@ class MyDocument extends Document {
     return (
       <Html lang='es'>
         <Head>
-          <meta property="og:image" itemProp='image' content='https://jmilo-dev.vercel.app/images/profile.png' key='ogimage'/>
-          <meta property="og:image:secure_url" itemProp='image' content='https://jmilo-dev.vercel.app/images/profile.png' key='ogimage:secure_url'/>
+          <meta property="og:image" itemProp='image' content='https://jmilo-dev.vercel.app/images/profile.jpeg' key='ogimage'/>
+          <meta property="og:image:secure_url" itemProp='image' content='https://jmilo-dev.vercel.app/images/profile.jpeg' key='ogimage:secure_url'/>
           <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="256" />
           <meta property="og:image:height" content="256" />
