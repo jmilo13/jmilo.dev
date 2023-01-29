@@ -101,7 +101,7 @@ export const projects = [
   {
     id:'p0',
     title: 'Arqplanbim',
-    deployUrl: 'https://muro-cincelado.vercel.app/',
+    deployUrl: 'https://arqplanbim.com/',
     repoUrl: "",
     imageSrc: '/images/projects/arqplanbim.jpeg',
     aditionalData: [
@@ -118,7 +118,7 @@ export const projects = [
   {
     id:'p1',
     title: 'Muro Cincelado',
-    deployUrl: 'https://muro-cincelado.vercel.app/',
+    deployUrl: 'https://murocincelado.vercel.app/',
     repoUrl: 'https://github.com/jmilo13/muro-cincelado',
     imageSrc: '/images/projects/murocincelado.jpg',
     aditionalData: [

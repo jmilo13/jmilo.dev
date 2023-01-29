@@ -40,15 +40,15 @@ export default function SectionHeader(data: Data){
             <ul>
               {data.sections.map(section => 
                 <li key={section.text} onClick={click}>
-                  {section.openOther ? <a href={section.url} target='_blank'>{section.text}</a> 
+                  {section.openOther ? <a href={section.url} target='_blank' rel='noreferrer noopener'>{section.text}</a> 
                   : <Link href={section.url}>{section.text}</Link>}
                 </li>)
               }   
             </ul>
             <div className={styles.social}>
-              <a onClick={click} href={data.social1} target='_blank'><Image src={linkedin} width={45} height={45}/></a>
-              <a onClick={click} href={data.social2} target='_blank'><Image src={github} width={45} height={45}/></a>
-              <a onClick={click} href={data.social3} target='_blank'><Image src={whatsapp} width={45} height={45}/></a>
+              <a onClick={click} href={data.social1} target='_blank' rel='noreferrer noopener'><Image src={linkedin} width={45} height={45}/></a>
+              <a onClick={click} href={data.social2} target='_blank' rel='noreferrer noopener'><Image src={github} width={45} height={45}/></a>
+              <a onClick={click} href={data.social3} target='_blank' rel='noreferrer noopener'><Image src={whatsapp} width={45} height={45}/></a>
             </div>
           </div>
         </nav>

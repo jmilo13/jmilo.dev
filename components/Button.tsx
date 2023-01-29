@@ -13,7 +13,7 @@ interface Data{
 export default function Button(data: Data){
     return (
     <div className={`${data.solid ? styles.button : styles.transparent} ${data.section && styles.buttonSection}`}> 
-        {data.target ? <a href={data.link} target={data.target}>{data.text}</a> : <Link href={data.link}>{data.text}</Link>}
+        {data.target ? <a href={data.link} target={data.target} rel='noreferrer noopener'>{data.text}</a> : <Link href={data.link}>{data.text}</Link>}
     </div> 
     )
 }
