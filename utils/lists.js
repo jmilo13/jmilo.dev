@@ -17,7 +17,7 @@ export const sections = [
   },
   {
     text: 'CV',
-    url: '/documents/CV_Desarrollador_web.pdf',
+    url: '/documents/CV_Desarrollador_Frontend.pdf',
     openOther: true,
   },
   ]
